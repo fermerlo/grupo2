@@ -18,7 +18,7 @@ function App() {
         <Route path="/paginaPrincipal" element={<PaginaPrincipal/>} />
         <Route path="/registro" element={<RegistroDeUsuarios />} />
         <Route path="/iniciosesion" element={<InicioSesion />} />
-        <Route path="/iniciofuctions" element={<NuevaTarea />} />
+        <Route path="/iniciofunctions" element={<NuevaTarea />} />
         <Route path="/completa" element={<Completa />} />
         <Route path="/editar" element={<EditarTarea />} />
         <Route path="/eliminar" element={<Eliminar />} />
@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+
