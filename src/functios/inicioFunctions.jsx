@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NuevaTarea() {
   const [tarea, setTarea] = useState();
@@ -24,11 +25,26 @@ export default function NuevaTarea() {
         </div>
         <div>
           <label>Descripción:</label> <br/>
-          <input className="bloque" type="textarea" value={desc} onChange={handleDescChange}/><br/>
+          <input className="bloque"  type="textarea" value={desc} onChange={handleDescChange}/><br/>
         </div>
         <br/>
         <br/>
           <button onClick={handleAgregar}>Agregar tarea</button>
+          <br />
+          <br />
+          <br />
+          <button> <Link id="link" to="/editar">Editar Tarea</Link></button>
+          <br />
+          <br />
+          <button> <Link id="link" to="/eliminar">Eliminar Tarea</Link></button>
+          <br />
+          <br />
+          <button> <Link id="link" to="/filtrar">Filtrar Tarea</Link></button>
+          <br />
+          <br />
+          <br />
+          <br />
+          <button> <Link id="link" to="/paginaPrincipal">Volver al inicio</Link></button>
       </div>
     )
 }
