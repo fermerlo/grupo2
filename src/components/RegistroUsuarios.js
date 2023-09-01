@@ -26,6 +26,8 @@ const RegistroDeUsuarios = () => {
       </div>
       <br />
       <button> <Link id="link" to="/iniciofunctions">Registrarse</Link></button>
+      <br/>
+      <h3> <Link to="/paginaPrincipal"> Para volver atrás , haz click en este mensaje </Link> </h3>
     </div>
   );
 };
