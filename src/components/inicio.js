@@ -1,24 +1,33 @@
-import React from 'react'
-import NuevaTarea from '../functios/inicioFunctions';
-import Filtrar from '../functios/Filtrar';
-import EditarTarea from '../functios/Editar';
-import Eliminar from '../functios/Eliminar';
-import Completa from '../functios/Completa';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Inicio() {
-    return (
-    <>
+const RegistroDeUsuarios = () => {
+  const [usuario, setUsuario] = useState();
+  const [contraseña, setContraseña] = useState();
+
+  const handleUsuarioChange = (event) => {
+    setUsuario(event.target.value);
+  };
+
+  const handleContraseñaChange = (event) => {
+    setContraseña(event.target.value);
+  };
+
+  return (
+    <div>
+      <h2>Registro de Usuarios</h2>
       <div>
-        <h2>Agregar nueva tarea:</h2>
-        <NuevaTarea/>
+        <label>Usuario:</label>
+        <input className="bloque" type="text" value={usuario} onChange={handleUsuarioChange} />
       </div>
-        <EditarTarea/>
-        <Eliminar/>
-        <Completa/>
-        <br/>
-        <Filtrar/>
-    </>
-    );
-  }
+      <div>
+        <label>Contraseña:</label>
+        <input className="bloque" type="password" value={contraseña} onChange={handleContraseñaChange} />
+      </div>
+      <br />
+      <button> <Link id="link" to="/iniciofunctions">Registrarse</Link></button>
+    </div>
+  );
+};
 
-export default Inicio
+export default RegistroDeUsuarios;
