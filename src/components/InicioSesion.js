@@ -25,7 +25,7 @@ const InicioSesion = () => {
         <input className="bloque" type="password" value={contraseña} onChange={handleContraseñaChange} />
       </div>
       <br />
-      <button> <Link id="link" to="/iniciofuctions">Iniciar Sesión</Link></button>
+      <button> <Link id="link" to="/iniciofunctions">Iniciar Sesión</Link></button>
       <br />
       <br />
       <h3> <Link to="/paginaPrincipal"> Para volver atrás , haz click en este mensaje </Link> </h3>
@@ -34,3 +34,4 @@ const InicioSesion = () => {
 };
 
 export default InicioSesion;
+
